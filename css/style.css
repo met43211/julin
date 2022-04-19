@@ -1,0 +1,296 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Убираем линии обводки некоторых браузеров*/
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*задаем блочными теги Html5*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 30px;
+  font-size: 20px;
+  color: #1e1744;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*задаем наследование шрифтов*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Courier New Bold';
+  src: url("fonts/CourierNewPS-BoldMT.eot");
+  src: local("Courier New Bold"), local("fonts/CourierNewPS-BoldMT"), url("fonts/CourierNewPS-BoldMT.eot?#iefix") format("embedded-opentype"), url("fonts/CourierNewPS-BoldMT.woff2") format("woff2"), url("fonts/CourierNewPS-BoldMT.woff") format("woff"), url("fonts/CourierNewPS-BoldMT.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Courier New Regular';
+  src: url("fonts/CourierNewPSMT.eot");
+  src: local("Courier New"), local("fonts/CourierNewPSMT"), url("fonts/CourierNewPSMT.eot?#iefix") format("embedded-opentype"), url("fonts/CourierNewPSMT.woff2") format("woff2"), url("fonts/CourierNewPSMT.woff") format("woff"), url("fonts/CourierNewPSMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url("img/bg.jpg");
+  background-color: #081611;
+}
+
+* {
+  color: #12A332;
+  letter-spacing: 5px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header {
+  max-width: 1440px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.logIn {
+  margin-left: 100px;
+}
+
+.reg {
+  margin-right: 100px;
+}
+
+header button {
+  margin-top: 5px;
+  background-color: #081611;
+  outline: 1px dashed #12A332;
+  padding: 10px 20px 10px 20px;
+  font-family: 'Courier New Regular';
+  font-size: 16px;
+}
+
+header button:hover {
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.headtext {
+  margin-top: 15px;
+  font-size: 28px;
+  font-family: 'Courier New Bold';
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed #12A332;
+  height: 1px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.s1 {
+  max-width: 1440px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Courier New Regular';
+}
+
+.s1 button {
+  margin-top: 30px;
+  background-color: #081611;
+  outline: 1px dashed #12A332;
+  padding: 10px 20px 10px 20px;
+  font-family: 'Courier New Regular';
+  font-size: 16px;
+}
+
+.s1 button:hover {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.list1 {
+  margin-left: 100px;
+  margin-top: 80px;
+}
+
+#list0 {
+  display: none;
+  margin-top: 30px;
+}
+
+.list0text {
+  margin-top: 30px;
+}
+
+#hide {
+  display: none;
+}
+
+.countdown {
+  margin-top: 100px;
+  margin-right: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.countdown-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.countdown-time {
+  font-size: 36px;
+  margin-right: 96px;
+}
+
+.countdown-text {
+  margin-right: 96px;
+}
+
+.s2 {
+  margin-top: 90px;
+  max-width: 1440px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Courier New Regular';
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.s2bold {
+  font-family: 'Courier New Bold';
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.s2right {
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+.s2 img {
+  margin-left: 100px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.s2 button {
+  margin-top: 30px;
+  background-color: #081611;
+  outline: 1px dashed #12A332;
+  padding: 10px 20px 10px 20px;
+  font-family: 'Courier New Regular';
+  font-size: 16px;
+}
+
+.s2 button:hover {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}

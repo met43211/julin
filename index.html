@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Julin</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width,inital-scale=1">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <button class="logIn" src="#">вход</button>
+                <div class="headtext">E.Julin little home</div>
+                <button class="reg" src="#">регистрация</button>
+            </header>
+        </div>
+        <hr>
+        <div class="forbg">
+            <div class="wrapper">
+                <div class="s1">
+                    <div class="list1">
+                        <p>Список должников</p>
+                        <button onmousedown="count()"><span id="show">показать</span><span id="hide">скрыть</span></button>
+                        <div id="list0"><p>Козлинский Иван - 15 000р</p>
+                            <p>Назарова Дарья - 23 500р</p>
+                            <p>Монахов Кирилл - 18 300р</p>
+                            <p class="list0text">В случае отказа от возврата</br>долга будут отрезаны пальцы</p>
+                        </div>
+                    </div>
+                    <div id="countdown" class="countdown">
+                        <div class="countdown-number">
+                          <span class="days countdown-time "></span>
+                          <span class="countdown-text">Дни</span>
+                        </div>
+                        <div class="countdown-number">
+                          <span class="hours countdown-time"></span>
+                          <span class="countdown-text">Часы</span>
+                        </div>
+                        <div class="countdown-number">
+                          <span class="minutes countdown-time"></span>
+                          <span class="countdown-text">Минуты</span>
+                        </div>
+                        <div class="countdown-number">
+                          <span class="seconds countdown-time"></span>
+                          <span class="countdown-text">Секунды</span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="s2">
+                        <img src="css/img/map.jpg">
+                    <div class="s2right">
+                        <p class="s2bold title">Встреча назначена</p>
+                        <input type="checkbox"><span> принимаю правила и условия</span>
+                        <p>Нажимая кнопку «Подписаться», вы даете свое</br>
+                            согласие на обработку персональных данных</br>
+                            сервером [trprvdom1]<span class="s2bold">согласно политики</br>
+                            конфиденциальности </span></p>
+                        <button src="#">подписаться</button>
+                    </div>
+                </div>
+            </div>
+        <hr>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
